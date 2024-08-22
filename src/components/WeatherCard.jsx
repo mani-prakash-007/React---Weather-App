@@ -29,10 +29,9 @@ export const WeatherCard = () => {
     try {
       const response = await fetch(API_URL);
       const weatherData = await response.json();
-      console.log(weatherData);
       setWeatherData(weatherData);
     } catch (error) {
-      console.log("Can't Fetch Data");
+      alert("Error on Fetching Data");
     }
   };
 
