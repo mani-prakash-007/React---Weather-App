@@ -116,7 +116,7 @@ export const WeatherCard = () => {
           <div className="mt-2">
             <input
               type="text"
-              className="border border-black pl-5 py-2 my-5 ml-14 rounded-3xl  font-semibold"
+              className="border border-black pl-5 py-2 my-5 ml-14 rounded-3xl  font-semibold focus:outline-none hover:bg-gray-100"
               ref={inputRef}
               placeholder="Enter City Name"
             />
@@ -168,10 +168,10 @@ export const WeatherCard = () => {
                 weatherData.cod == 404 && (
                   <>
                     <div className="w-80 h-80 mx-auto flex flex-col justify-center ml-7">
-                      <h1 className="my-10 font-bold text-5xl text-center text-wrap text-white">
+                      <h1 className="my-10 font-bold text-5xl text-center text-wrap text-black">
                         City Not Found
                       </h1>
-                      <h1 className="my-10 font-semibold italic text-2xl text-center text-wrap text-white">{`"${cityName}"`}</h1>
+                      <h1 className="my-10 font-semibold italic text-2xl text-center text-wrap text-black">{`"${cityName}"`}</h1>
                     </div>
                   </>
                 )
